@@ -38,6 +38,8 @@ const server = net.createServer(function(socket) {
 server.listen(3000); // Ont écoute sur le port 3000.
 ```
 
+> Vous noterez l'utlisation de function "arrow" dans l'objectif de conserver le scope parent du serveur socket. Cela va permettre nottament d'enregistrer des nouvelles variables sur le scope de la fonction principale pour les ré-utiliser dans les functions enfants.
+
 Suivre avec **explication sommaire du code**...
 
 ## Premier client
