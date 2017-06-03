@@ -3,7 +3,9 @@
 Le module event va vous permettre de créer un "conteneur" et émettre/recevoir des évènements à l'intérieur de celui-ci. La plupart des modules du core NodeJS sont construit autour
 de celui-ci pour répondre à une architecture orienté évènements. 
 
-- Event-driven ? **Explication et schéma**
+![Event Driven Architecture Schema](https://github.com/ES-Community/Tutoriels/blob/master/node-modules/event/event_driven.png)
+
+Si vous souhaitez en savoir d'avantage sur ce type d'architecture je vous invite à suivre [Ce lien](https://fr.wikipedia.org/wiki/Architecture_orient%C3%A9e_%C3%A9v%C3%A9nements)
  
 ## Require
 
