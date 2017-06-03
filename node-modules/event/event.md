@@ -1,6 +1,6 @@
 # Event 
 
-Le module event va vous permettre de créer un "conteneur" et émettre/recevoir des évènements à l'intérieur de celui-ci. La plupart des modules du core NodeJS sont construit autour
+Le module event va vous permettre de créer un "conteneur" et émettre/recevoir des évènements à l'intérieur de celui-ci. La plupart des modules du coeur NodeJS sont construit autour
 de celui-ci pour répondre à une architecture orienté évènements. 
 
 ![Event Driven Architecture Schema](https://github.com/ES-Community/Tutoriels/blob/master/node-modules/event/event_driven.png)
@@ -15,7 +15,7 @@ const emitter = require('events');
 
 ## Un premier conteneur
 
-Dans ce chapitre nous allons créer un conteneur d'évènements vraiment très simple et appeler notre évènements toutes les 1 secondes dans un setInterval NodeJS.
+Dans ce chapitre nous allons créer un conteneur d'évènements vraiment très simple et appeler notre évènement toutes les 1 secondes dans une function setInterval : 
 
 ```js
 const emitter = require('events'); 
@@ -30,9 +30,11 @@ setInterval(function() {
 },1000); 
 ```
 
+Pas de limite à ce que vous pouvez définir à l'intérieur de ce conteneur. 
+
 ## Avec une class 
 
-Dans ce chapitre nous allons intégrer un Emitter à une class. Cela va nous permettre tout comme notre conteneur précédemment crée d'envoyer ou de recevoir des évènements à l'intérieur de notre class.
+Dans ce chapitre nous allons intégrer un Emitter à une class. Cela va nous permettre tout comme notre conteneur précédemment crée d'envoyer ou de recevoir un ou plusieurs évènements à l'intérieur de notre class.
 
 ```js
 const emitter = require('events');
