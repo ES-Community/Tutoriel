@@ -68,10 +68,16 @@ Reprenons un exemple similaire au premier chapitre et adaptons le légèrement :
 const emitter = require('events'); 
 
 const EventWrapper = new emitter(); 
+
+EventWrapper.on('removeListener',function(eventName,listenerFN) {
+  console.log(`event ${eventName} has been removed from EventWrapper`);
+});
+
 EventWrapper.once('sayHello',function() {
     console.log('hello world!');
 });
 
+// Emit event
 EventWrapper.emit('sayHello');
 EventWrapper.emit('sayHello');
 ```
